@@ -729,11 +729,11 @@ Text GLabel 9400 3100 2    50   Input ~ 0
 3V3
 Wire Wire Line
 	9300 2050 9200 2050
-Text GLabel 8100 2050 0    50   Input ~ 0
+Text GLabel 8100 1850 0    50   Input ~ 0
 D13
 Text GLabel 8100 1950 0    50   Input ~ 0
 D12
-Text GLabel 8100 1850 0    50   Input ~ 0
+Text GLabel 8100 2050 0    50   Input ~ 0
 D11
 Wire Wire Line
 	5450 1400 5550 1400
@@ -1001,12 +1001,10 @@ F 3 "~" H 8000 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7800 5800 7550 5800
+	7800 5800 7700 5800
 Connection ~ 7550 5800
 Wire Wire Line
 	7400 5450 7550 5450
-Wire Wire Line
-	7800 5450 7800 5700
 Wire Wire Line
 	7550 5500 7550 5450
 Connection ~ 7550 5450
@@ -1136,4 +1134,44 @@ Wire Wire Line
 	8700 2050 8700 2250
 Text GLabel 6600 5450 0    50   Input ~ 0
 VUSB
+$Comp
+L Connector_Generic:Conn_01x03 J14
+U 1 1 5F19208D
+P 8600 5800
+F 0 "J14" H 8680 5842 50  0000 L CNN
+F 1 "Conn_01x03" H 8680 5751 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 8600 5800 50  0001 C CNN
+F 3 "~" H 8600 5800 50  0001 C CNN
+	1    8600 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 5450 8400 5450
+Wire Wire Line
+	8400 5450 8400 5700
+Connection ~ 7800 5450
+Wire Wire Line
+	7800 5450 7800 5700
+Wire Wire Line
+	7700 5800 7700 5550
+Wire Wire Line
+	7700 5550 8300 5550
+Wire Wire Line
+	8300 5550 8300 5800
+Wire Wire Line
+	8300 5800 8400 5800
+Connection ~ 7700 5800
+Wire Wire Line
+	7700 5800 7550 5800
+$Comp
+L power:GND #PWR?
+U 1 1 5F1A90B1
+P 8400 5900
+F 0 "#PWR?" H 8400 5650 50  0001 C CNN
+F 1 "GND" H 8405 5727 50  0000 C CNN
+F 2 "" H 8400 5900 50  0001 C CNN
+F 3 "" H 8400 5900 50  0001 C CNN
+	1    8400 5900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
