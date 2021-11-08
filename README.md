@@ -1,7 +1,9 @@
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
 # Nano Expander
-Grove Breakout board for Arduino Nano 33
+Grove Breakout board for [Arduino Nano 33 IoT](https://store.arduino.cc/products/arduino-nano-33-iot).
+
+This is the sibling of the [Bitsy Expander](https://github.com/id-studiolab/BitsyExpander), a Grove Breakout board for Adafruit's [ItsyBitsy M4 Express](https://www.adafruit.com/product/3800).
 
 <img src="nanoExpander_v12/Assets/NanoExpander_Front.png" width="400px">   <img src="/nanoExpander_v12/Assets/NanoExpander_Back.png" width="400px">
 
